@@ -8,7 +8,7 @@ class Service extends \Hprose\Http\Service
 {
     public function header($name, $value, $context)
     {
-        $context->response->header($name, $value);
+        $context->response->header([$name => $value]);
     }
 
     public function getAttribute($name, $context)

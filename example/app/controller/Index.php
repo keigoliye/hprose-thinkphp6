@@ -2,6 +2,8 @@
 namespace app\controller;
 
 use app\BaseController;
+use app\logic\Example;
+use Hprose\thinkphp6\Server;
 
 class Index extends BaseController
 {
@@ -13,5 +15,12 @@ class Index extends BaseController
     public function hello($name = 'ThinkPHP6')
     {
         return 'hello,' . $name;
+    }
+
+    public function server()
+    {
+        $server = new Server();
+        $server->addAsyncInstanceMethods(new Example());
+        $server->start();
     }
 }
