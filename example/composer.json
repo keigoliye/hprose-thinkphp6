@@ -22,7 +22,7 @@
     "repositories": {
         "keigoliye/hprose-thinkphp6": {
             "type": "vcs",
-            "url": "/Users/keigo/Workspace/thinkphp-extends/hprose-thinkphp6"
+            "url": "git@gitee.com:thinkphp-extends/hprose-thinkphp6.git"
         }
     },
     "require": {
