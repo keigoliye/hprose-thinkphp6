@@ -20,7 +20,7 @@ class Index extends BaseController
     public function server()
     {
         $server = new Server();
-        $server->addAsyncInstanceMethods(new Example());
-        $server->start();
+        $server->addInstanceMethods(new Example());
+        return $server->start();
     }
 }
